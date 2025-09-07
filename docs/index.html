@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Office Setup</title>
+    <meta name="description" content="A simple showcase of my office setup: desk, devices, peripherals, and links to what I use." />
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="My Office Setup" />
+    <meta property="og:description" content="A simple showcase of my office setup." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/docs/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>My Office Setup</h1>
+        <p class="tagline">What I use every day — gear, links, and notes.</p>
+        <div class="controls">
+          <input id="q" class="search" type="search" placeholder="Search gear, brand, or tags…" aria-label="Search" />
+          <select id="tagFilter" class="select" aria-label="Filter by tag">
+            <option value="">All tags</option>
+          </select>
+          <button id="themeToggle" class="button" aria-label="Toggle theme">🌓</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty hidden">No items match your filters.</div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>
+          Built with plain HTML/CSS/JS. Edit <code>docs/items.json</code> to update content.
+        </small>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+  </html>
+

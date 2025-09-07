@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Laptop",
+    "brand": "Apple",
+    "model": "MacBook Pro 14\u2033 (M3/M2)",
+    "image": "assets/placeholder.svg",
+    "tags": ["compute", "macOS"],
+    "links": [
+      { "label": "Apple", "url": "#" }
+    ],
+    "notes": "Primary machine for dev and content."
+  },
+  {
+    "name": "Monitor",
+    "brand": "Dell",
+    "model": "U2720Q 27\u2033 4K",
+    "image": "assets/placeholder.svg",
+    "tags": ["display"],
+    "links": [
+      { "label": "Product page", "url": "#" }
+    ],
+    "notes": "sRGB accurate, USB-C hub is handy."
+  },
+  {
+    "name": "Keyboard",
+    "brand": "Keychron",
+    "model": "K6",
+    "image": "assets/placeholder.svg",
+    "tags": ["input", "wireless"],
+    "links": [
+      { "label": "Keychron", "url": "#" }
+    ],
+    "notes": "Brown switches, PBT caps."
+  },
+  {
+    "name": "Mouse",
+    "brand": "Logitech",
+    "model": "MX Master 3S",
+    "image": "assets/placeholder.svg",
+    "tags": ["input", "wireless"],
+    "links": [
+      { "label": "Logitech", "url": "#" }
+    ],
+    "notes": "Comfortable ergonomics and great battery."
+  },
+  {
+    "name": "Microphone",
+    "brand": "Shure",
+    "model": "MV7",
+    "image": "assets/placeholder.svg",
+    "tags": ["audio"],
+    "links": [
+      { "label": "Shure", "url": "#" }
+    ],
+    "notes": "USB/XLR hybrid for calls and recording."
+  }
+]
+

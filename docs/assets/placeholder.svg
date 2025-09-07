@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="#0b1320"/>
+  <rect x="12" y="12" width="376" height="216" rx="16" fill="url(#g)" opacity="0.25"/>
+  <g fill="#9ca3af" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" text-anchor="middle">
+    <text x="200" y="116" font-size="22">Drop an image at</text>
+    <text x="200" y="142" font-size="18">docs/assets/…</text>
+  </g>
+  <rect x="12" y="12" width="376" height="216" rx="16" fill="none" stroke="#334155"/>
+</svg>
+
