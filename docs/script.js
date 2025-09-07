@@ -24,8 +24,10 @@ async function init() {
 
 function hydrateTheme() {
   const saved = localStorage.getItem('theme');
-  if (saved === 'light') document.documentElement.classList.add('light');
-  if (saved === 'dark') document.documentElement.classList.add('dark');
+  const root = document.documentElement;
+  if (saved === 'light') root.classList.add('light');
+  if (saved === 'dark') root.classList.add('dark');
+  updateThemeMeta();
 }
 
 function toggleTheme() {
@@ -36,11 +38,19 @@ function toggleTheme() {
     localStorage.setItem('theme', 'light');
   } else if (root.classList.contains('light')) {
     root.classList.remove('light');
-    localStorage.setItem('theme', '');
+    localStorage.setItem('theme', ''); // back to system preference
   } else {
     root.classList.add('dark');
     localStorage.setItem('theme', 'dark');
   }
+  updateThemeMeta();
+}
+
+function updateThemeMeta() {
+  const root = document.documentElement;
+  const isDark = root.classList.contains('dark') || (!root.classList.contains('light') && matchMedia('(prefers-color-scheme: dark)').matches);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', isDark ? '#0b1020' : '#f8fafc');
 }
 
 async function loadItems() {
@@ -130,4 +140,3 @@ function escapeHtml(s = '') {
 function escapeAttr(s = '') {
   return String(s).replace(/"/g, '&quot;');
 }
-

@@ -1,5 +1,6 @@
 /* Design tokens */
 :root {
+  /* Default to system preference; variables below are dark by default */
   --bg: #0b1020;
   --panel: #0f172a;
   --text: #e5e7eb;
@@ -18,6 +19,27 @@
     --brand: #0284c7;
     --ring: rgba(2,132,199,0.25);
   }
+}
+
+/* Explicit theme overrides via class toggle */
+:root.dark {
+  --bg: #0b1020;
+  --panel: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --brand: #0ea5e9;
+  --ring: rgba(14,165,233,0.5);
+  color-scheme: dark;
+}
+
+:root.light {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --brand: #0284c7;
+  --ring: rgba(2,132,199,0.25);
+  color-scheme: light;
 }
 
 /* Layout */
@@ -75,13 +97,33 @@ main { padding: 14px 0 40px; }
   border-radius: 14px;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 160px auto;
+  /* Let media height be defined by its aspect-ratio */
+  grid-template-rows: auto 1fr;
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.15); }
 
-.card .media { background: #0b1320; display: grid; place-items: center; }
-.card img { width: 100%; height: 100%; object-fit: cover; }
+.card .media {
+  background: #0b1320;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Enforce a consistent visual area */
+  aspect-ratio: 16 / 9;
+  padding: 8px;
+  overflow: hidden;
+  min-width: 0; /* prevent overflow in grid/flex */
+  min-height: 0;
+}
+.card img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 
 .card .body { padding: 12px 12px 14px; display: grid; gap: 8px; }
 .title { font-weight: 600; margin: 0; }
@@ -105,4 +147,3 @@ main { padding: 14px 0 40px; }
 .site-footer { border-top: 1px dashed color-mix(in oklab, var(--muted) 30%, transparent); padding: 20px 0; }
 
 code { background: color-mix(in oklab, var(--muted) 20%, transparent); padding: 2px 6px; border-radius: 6px; }
-

@@ -1,12 +1,12 @@
 [
   {
-    "name": "Laptop",
+    "name": "Desktop",
     "brand": "Apple",
     "model": "Mac Mini 2024 16 GB Unified Memory (M4)",
-    "image": "assets/mac_mini.jpeg",
+    "image": "assets/mac-mini-hero.jpg",
     "tags": ["compute", "macOS"],
     "links": [
-      { "label": "Apple", "url": "#" }
+      { "label": "Apple — Mac mini", "url": "https://www.apple.com/mac-mini/" }
     ],
     "notes": "Primary machine for dev and content."
   },
@@ -17,18 +17,18 @@
     "image": "assets/lg_fhd_curved.jpg",
     "tags": ["display"],
     "links": [
-      { "label": "LG", "url": "#" }
+      { "label": "LG Monitors", "url": "https://www.lg.com/us/monitors/" }
     ],
     "notes": "Large, curved, great for multitasking."
   },
   {
-    "name": "Keyboard",
+    "name": "Keyboard & Mouse",
     "brand": "Logitech",
-    "model": "K6",
+    "model": "Pop Icon Combo",
     "image": "assets/logitech_pop_icon_combo.avif",
     "tags": ["input", "wireless"],
     "links": [
-      { "label": "Logitech", "url": "#" }
+      { "label": "Logitech POP Icon Combo", "url": "https://www.logitech.com/en-us/shop/p/pop-icon-combo" }
     ],
     "notes": "Compact, wireless, quiet keys."
   },
@@ -37,11 +37,12 @@
     "brand": "Rode",
     "model": "NT1",
     "image": "assets/Rode_NT1_AI1.jpg",
-    "tags": ["audio"],
+    "tags": ["audio","meetings"],
     "links": [
-      { "label": "Rode", "url": "#" }
+      { "label": "RØDE NT1", "url": "https://rode.com/en/microphones/studio-condenser/nt1" },
+      { "label": "RØDE AI-1 Interface", "url": "https://rode.com/en/interfaces-and-mixers/audio-interfaces/ai-1" }
     ],
-    "notes": ""
+    "notes": "Great for meetings and recording videos."
   },
   {
     "name": "Tablet",
@@ -50,9 +51,8 @@
     "image": "assets/Apple-iPad-Air.jpg.large.jpg",
     "tags": ["tablet", "iOS"],
     "links": [
-      { "label": "Apple", "url": "#" }
+      { "label": "Apple — iPad Air", "url": "https://www.apple.com/ipad-air/" }
     ],
     "notes": "Great as portable second screen, add the magic keyboard to take your setup around your home!"
   }
 ]
-
