@@ -2,8 +2,8 @@
   {
     "name": "Laptop",
     "brand": "Apple",
-    "model": "MacBook Pro 14\u2033 (M3/M2)",
-    "image": "assets/placeholder.svg",
+    "model": "Mac Mini 2024 16 GB Unified Memory (M4)",
+    "image": "assets/mac_mini.jpeg",
     "tags": ["compute", "macOS"],
     "links": [
       { "label": "Apple", "url": "#" }
@@ -12,47 +12,47 @@
   },
   {
     "name": "Monitor",
-    "brand": "Dell",
-    "model": "U2720Q 27\u2033 4K",
-    "image": "assets/placeholder.svg",
+    "brand": "LG",
+    "model": "FHD Curved 32in",
+    "image": "assets/lg_fhd_curved.jpg",
     "tags": ["display"],
     "links": [
-      { "label": "Product page", "url": "#" }
+      { "label": "LG", "url": "#" }
     ],
-    "notes": "sRGB accurate, USB-C hub is handy."
+    "notes": "Large, curved, great for multitasking."
   },
   {
     "name": "Keyboard",
-    "brand": "Keychron",
-    "model": "K6",
-    "image": "assets/placeholder.svg",
-    "tags": ["input", "wireless"],
-    "links": [
-      { "label": "Keychron", "url": "#" }
-    ],
-    "notes": "Brown switches, PBT caps."
-  },
-  {
-    "name": "Mouse",
     "brand": "Logitech",
-    "model": "MX Master 3S",
-    "image": "assets/placeholder.svg",
+    "model": "K6",
+    "image": "assets/logitech_pop_icon_combo.avif",
     "tags": ["input", "wireless"],
     "links": [
       { "label": "Logitech", "url": "#" }
     ],
-    "notes": "Comfortable ergonomics and great battery."
+    "notes": "Compact, wireless, quiet keys."
   },
   {
     "name": "Microphone",
-    "brand": "Shure",
-    "model": "MV7",
-    "image": "assets/placeholder.svg",
+    "brand": "Rode",
+    "model": "NT1",
+    "image": "assets/Rode_NT1_AI1.jpg",
     "tags": ["audio"],
     "links": [
-      { "label": "Shure", "url": "#" }
+      { "label": "Rode", "url": "#" }
     ],
-    "notes": "USB/XLR hybrid for calls and recording."
+    "notes": ""
+  }
+  {
+    "name": "Tablet",
+    "brand": "Apple",
+    "model": "iPad Air M3 (2025)",
+    "image": "assets/Apple-iPad-Air.jpg.large.jpg",
+    "tags": ["tablet", "iOS"],
+    "links": [
+      { "label": "Apple", "url": "#" }
+    ],
+    "notes": "Great as portable second screen, add the magic keyboard to take your setup around your home!"
   }
 ]
 
